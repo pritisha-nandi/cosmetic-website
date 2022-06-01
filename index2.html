@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+      <div class="topnav">
+        <a href="#"> <img src="images/PIXIE BEAUTY.png" width="140px"></a>
+        <div class="search-container">
+          <form action="search.jsp" method="post">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="topnav2">
+        <a href="#">Home</a>
+        <a href="membership/contact.html">Membership</a>
+        <a href="Contact/index.html">Contact</a>
+        <a href="about us/index.html">About</a>
+        <a href="viewcart.jsp"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+      <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/slide1.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/slide2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/slide4.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/slide3.jpg" style="width:100%">
+          </div>
+      </div> 
+          
+        <br>
+        <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span>    
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+        <div class="product">
+            
+            <div class="row">
+                
+                <div class="column">
+                  <div class="card">
+                    <a href="details.jsp?id=1"><img src="images/arrival-4.jpg" style="width:100%"></a>
+                    <div class="container">
+                      <h2>Lipstick</h2>
+                      <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      <p>&#8377 699</p>
+                      <p><a href="cart.jsp?price=699&id=1">
+                        <button class="button"><b>ADD TO CART<b></button>
+                      </a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=2"><img src="images/arrival-1.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Lip Gloss</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 499</p>
+                        <p> <a href="cart.jsp?price=499&id=2">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=3"><img src="images/product-2.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Lip Gloss</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 499</p>
+                        <p><a href="cart.jsp?price=499&id=3">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=4"><img src="images/arrival-3.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Lip Scrub</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 399</p>
+                        <p><a href="cart.jsp?price=399&id=4">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row">
+                
+                <div class="column">
+                  <div class="card">
+                    <a href="details.jsp?id=5"><img src="images/product-3.jpg" style="width:100%"></a>
+                    <div class="container">
+                      <h2>Face Mask</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      <p>&#8377 399</p>
+                      <p><a href="cart.jsp?price=399&id=5">
+                        <button class="button"><b>ADD TO CART<b></button>
+                      </a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=6"><img src="images/arrival-2.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Mascara</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 699</p>
+                        <p><a href="cart.jsp?price=699&id=6">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=7"><img src="images/arrival-6.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Makeup Brush</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 599</p>
+                        <p><a href="cart.jsp?price=599&id=7">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=8"><img src="images/arrival-8.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Makeup Brush</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 599</p>
+                        <p><a href="cart.jsp?price=599&id=8">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="row">
+                
+                <div class="column">
+                  <div class="card">
+                    <a href="details.jsp?id=9"><img src="images/product-1.jpg" style="width:100%"></a>
+                    <div class="container">
+                      <h2>Highlighter</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                      <p>&#8377 799</p>
+                      <p><a href="cart.jsp?price=799&id=9">
+                        <button class="button"><b>ADD TO CART<b></button>
+                      </a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                    <a href="details.jsp?id=10"><img src="images/arrival-7.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Face Cream</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 499</p>
+                        <p><a href="cart.jsp?price=499&id=10">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=11"><img src="images/arrival-5.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Hair Serum</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 599</p>
+                        <p><a href="cart.jsp?price=599&id=11">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=12"><img src="images/product-5.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Compact</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 399</p>
+                        <p><a href="cart.jsp?price=399&id=12">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="row">
+                
+                <div class="column">
+                  <div class="card">
+                    <a href="details.jsp?id=13"><img src="images/product-8.jpg" style="width:100%"></a>
+                    <div class="container">
+                      <h2>Sun Cream</h2>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <p>&#8377 499</p>
+                      <p><a href="cart.jsp?price=499&id=13">
+                        <button class="button"><b>ADD TO CART<b></button>
+                      </a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=14"><img src="images/product-7.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Body Lotion</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 799</p>
+                        <p><a href="cart.jsp?price=799&id=14">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=15"><img src="images/product-4.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Face Wash</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 299</p>
+                        <p><a href="cart.jsp?price=299&id=15">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                      <a href="details.jsp?id=16"><img src="images/product-6.jpg" style="width:100%"></a>
+                      <div class="container">
+                        <h2>Soap</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>&#8377 299</p>
+                        <p><a href="cart.jsp?price=299&id=16">
+                          <button class="button"><b>ADD TO CART<b></button>
+                        </a></p>
+                      </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <br>
+        <hr>
+        <section class="footer">
+          <h3>
+              About us
+          </h3>
+          <p>
+            Hello, gorgeous! Welcome to PIXIE BEAUTY Cosmetics.<br> 
+            A brand of choice for the women of today! And we're here to ensure you have a lot of fun with our makeup.<br> 
+            We believe in every interpretation of beauty. Bold to subdued, quirky to crazy, everyday to glam goddess!<br>Our aim is to celebrate every aspect of you, no matter what your style is. 
+            So, go ahead and pick your faves.<br>
+            It's time to Rule the world, one look at a time!
+          </p>
+          <div class="icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-pinterest"></i> <i class="fa fa-youtube"></i>
+          </div>
+          <hr>
+          <p>Copyright © 2022 PIXIE BEAUTY | All rights reserved </p>
+      </section>          
+</body>
+</html>
