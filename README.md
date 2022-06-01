@@ -13,6 +13,6 @@
 ### viewcart
 ![image](https://user-images.githubusercontent.com/104378444/171454235-6ad7d037-151d-47a9-8b8f-ee1543bada20.png)
 
-### removefrom cart
+### remove from cart
 ![image](https://user-images.githubusercontent.com/104378444/171454521-5e81f4af-e374-47ab-841d-60c4536d988a.png)
 
